@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Table 1</header>
+        <table>
+            
+                <thead>
+                    <tr>
+                        <th>Index#</th>
+                        <th>Value</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="Index1">A1</td>
+                        <td id="Value1">41</td>
+                    </tr>
+                    <tr>
+                        <td id="Index2">A2</td>
+                        <td id="Value2">18</td>
+                    </tr>
+                    <tr>
+                        <td id="Index3">A3</td>
+                        <td id="Value3">21</td>
+                    </tr>
+                    <tr>
+                        <td id="Index4">A4</td>
+                        <td id="Value4">63</td>
+                    </tr>
+                    <tr>
+                        <td id="Index5">A5</td>
+                        <td id="Value5">2</td>
+                    </tr>
+                    <tr>
+                        <td id="Index6">A6</td>
+                        <td id="Value6">53</td>
+                    </tr>
+                    <tr>
+                        <td id="Index7">A7</td>
+                        <td id="Value7">5</td>
+                    </tr>
+                    <tr>
+                        <td id="Index8">A8</td>
+                        <td id="Value8">57</td>
+                    </tr>
+                    <tr>
+                        <td id="Index9">A9</td>
+                        <td id="Value9">60</td>
+                    </tr>
+                    <tr>
+                        <td id="Index10">A10</td>
+                        <td id="Value10">93</td>
+                    </tr>
+                    <tr>
+                        <td id="Index11">A11</td>
+                        <td id="Value11">28</td>
+                    </tr>
+                    <tr>
+                        <td id="Index12">A12</td>
+                        <td id="Value12">3</td>
+                    </tr>
+                    <tr>
+                        <td id="Index13">A13</td>
+                        <td id="Value13">90</td>
+                    </tr>
+                    <tr>
+                        <td id="Index14">A14</td>
+                        <td id="Value14">39</td>
+                    </tr>
+                    <tr>
+                        <td id="Index15">A15</td>
+                        <td id="Value15">80</td>
+                    </tr>
+                    <tr>
+                        <td id="Index16">A16</td>
+                        <td id="Value16">88</td>
+                    </tr>
+                    <tr>
+                        <td id="Index17">A17</td>
+                        <td id="Value17">49</td>
+                    </tr>
+                    <tr>
+                        <td id="Index18">A18</td>
+                        <td id="Value18">60</td>
+                    </tr>
+                    <tr>
+                        <td id="Index19">A19</td>
+                        <td id="Value19">26</td>
+                    </tr>
+                    <tr>
+                        <td id="Index20">A20</td>
+                        <td id="Value20">28</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>
+                        Alpha
+                    </td>
+                    <td id="AlphaResult"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Beta
+                    </td>
+                    <td id="BetaResult"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Charlie
+                    </td>
+                    <td id="CharlieResult"></td>
+                </tr>
+
+            </table>
+
+
+
+            <script>
+                // Get the values
+                var valueA5 = parseInt(document.getElementById("Value5").textContent);
+                var valueA20 = parseInt(document.getElementById("Value20").textContent);
+                var valueA15 = parseInt(document.getElementById("Value15").textContent);
+                var valueA7 = parseInt(document.getElementById("Value7").textContent);
+                var valueA13 = parseInt(document.getElementById("Value13").textContent);
+                var valueA12 = parseInt(document.getElementById("Value12").textContent);
+        
+                // Calculate
+                var Alpha = valueA5 + valueA20;
+                var Beta = valueA15 / valueA7;
+                var Charlie = valueA13 * valueA12;
+        
+                // Display the result
+                console.log(Alpha , Beta, Charlie);
+                document.getElementById("AlphaResult").textContent = Alpha;
+                document.getElementById("BetaResult").textContent = Beta;
+                document.getElementById("CharlieResult").textContent = Charlie;
+            </script>
+        </body>
+        </html>
+
+
+
+</body>
+</html>
